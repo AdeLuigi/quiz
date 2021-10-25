@@ -3,30 +3,39 @@ import React, { useState } from 'react';
 export default function App() {
 	const questions = [
 		{
-			questionText: 'What is the capital of France?',
+			questionText: 'Alan Turing é conhecido como ____',
 			answerOptions: [
-				{ answerText: 'New York', isCorrect: false },
-				{ answerText: 'London', isCorrect: false },
-				{ answerText: 'Paris', isCorrect: true },
-				{ answerText: 'Dublin', isCorrect: false },
+				{ answerText: 'Pai da biologia', isCorrect: false },
+				{ answerText: 'Pai da física', isCorrect: false },
+				{ answerText: 'Pai da computação', isCorrect: true },
+				{ answerText: 'Pai da matemática', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Who is CEO of Tesla?',
+			questionText: 'A máquina de Turing ajudou a _____?',
 			answerOptions: [
-				{ answerText: 'Jeff Bezos', isCorrect: false },
-				{ answerText: 'Elon Musk', isCorrect: true },
-				{ answerText: 'Bill Gates', isCorrect: false },
-				{ answerText: 'Tony Stark', isCorrect: false },
+				{ answerText: 'Acessar a internet', isCorrect: false },
+				{ answerText: 'Decifrar os códigos criptografados', isCorrect: true },
+				{ answerText: 'Jogar jogos', isCorrect: false },
+				{ answerText: 'Fritar batata', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'The iPhone was created by which company?',
+			questionText: 'A máquina que Turing criou é considerada o ______',
 			answerOptions: [
-				{ answerText: 'Apple', isCorrect: true },
-				{ answerText: 'Intel', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Microsoft', isCorrect: false },
+				{ answerText: 'Primeiro computador', isCorrect: true },
+				{ answerText: 'Melhor video game', isCorrect: false },
+				{ answerText: 'Primeiro robô', isCorrect: false },
+				{ answerText: 'Smartphone', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'Alan Turing nasceu em _____',
+			answerOptions: [
+				{ answerText: '1911', isCorrect: false },
+				{ answerText: '1900', isCorrect: false },
+				{ answerText: '1840', isCorrect: false },
+				{ answerText: '1912', isCorrect: true },
 			],
 		},
 		{
