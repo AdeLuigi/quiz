@@ -91,14 +91,14 @@ export default function App() {
 					</div>
 					<div style={{display:'flex', flexDirection:'column'}}> 
 						<h5>5 - Alan Turing era noivo de Joan Clarke</h5>
-						<p>Foi na Hut 8 que Turing conheceu Joan Clarke, com quem teve um noivado de curtíssima duração — ele revelou para ela que era homossexual. Mesmo com o fim do noivado, Joan continuou amiga de Turing até a morte dele, em 1954. Ele se matou com cianureto, antes de completar 42 anos</p>
+						<p>Foi na Hut 8 que Turing conheceu Joan Clarke, com qem teve um noivado de curtíssima duração — ele revelou para ela que era homossexual. Mesmo com o fim do noivado, Joan continuou amiga de Turing até a morte dele, em 1954. Ele se matou com cianureto, antes de completar 42 anos</p>
 					</div>
 				</div>
 			) : (
 				<>
 					<div className='question-section'>
 						<div className='question-count'>
-							<span>Question {currentQuestion + 1}</span>/{questions.length}
+							<span>Pergunta {currentQuestion + 1}</span>/{questions.length}
 						</div>
 						<div className='question-text'>{questions[currentQuestion].questionText}</div>
 					</div>
