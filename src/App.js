@@ -39,12 +39,12 @@ export default function App() {
 			],
 		},
 		{
-			questionText: 'How many Harry Potter books are there?',
+			questionText: 'Alan Turing era noivo de _____',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
+				{ answerText: 'Beyoncé', isCorrect: false },
+				{ answerText: 'Anitta', isCorrect: false },
+				{ answerText: 'Adele', isCorrect: false },
+				{ answerText: 'Joan Clarke', isCorrect: true },
 			],
 		},
 	];
@@ -69,7 +69,30 @@ export default function App() {
 		<div className='app'>
 			{showScore ? (
 				<div className='score-section'>
-					You scored {score} out of {questions.length}
+					Você acertou {score} de {questions.length} questões
+					<div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+						<h3>Respostas</h3>
+					</div>
+					<div style={{display:'flex', flexDirection:'column'}}> 
+						<h5>1 - Alan Turing é conhecido como pai da ciencia da computação</h5>
+						<p>Matemático e cientista, Alan Turing nasceu em Londres em 23 de junho de 1912 e é conhecido como o pai da computação e da inteligência artificial.</p>
+					</div>
+					<div style={{display:'flex', flexDirection:'column'}}> 
+						<h5>2 - A máquina de Turing ajudou a decifrar os códigos criptografados</h5>
+						<p>A máquina eletromecânica que ele inventou durante a Segunda Guerra, a "máquina de Turing", ajudou a decifrar os códigos criptografados pela máquina Enigma, usada pela marinha da Alemanha nazista. A invenção de Turing é apontada como um dos motivos da vitória dos Aliados e é considerada um fator para guerra não ter se estendido ainda por mais anos — o que causaria ainda mais mortes.</p>
+					</div>
+					<div style={{display:'flex', flexDirection:'column'}}> 
+						<h5>3 - A máquina que Turing criou é considerada o primeiro computador</h5>
+						<p>Turing refinou os conceitos de Babbage e Von Neumann ao teorizar unidades de armazenamento, desenvolveu o Colossus, o primeiro computador digital programável do mundo, e publicou trabalhos sobre Inteligência Artificial, tendo proposto o teste para definir se uma IA é capaz de se passar por um humano.</p>
+					</div>
+					<div style={{display:'flex', flexDirection:'column'}}> 
+						<h5>4 - Alan Turing nasceu em 1912</h5>
+						<p>23 de junho de 1912, Maida Vale, Londres, Reino Unido</p>
+					</div>
+					<div style={{display:'flex', flexDirection:'column'}}> 
+						<h5>5 - Alan Turing era noivo de Joan Clarke</h5>
+						<p>Foi na Hut 8 que Turing conheceu Joan Clarke, com quem teve um noivado de curtíssima duração — ele revelou para ela que era homossexual. Mesmo com o fim do noivado, Joan continuou amiga de Turing até a morte dele, em 1954. Ele se matou com cianureto, antes de completar 42 anos</p>
+					</div>
 				</div>
 			) : (
 				<>
