@@ -34,7 +34,7 @@ export default function App() {
 			answerOptions: [
 				{ answerText: '1911', isCorrect: false },
 				{ answerText: '1900', isCorrect: false },
-				{ answerText: '1840', isCorrect: false },
+				{ answerText: '1841', isCorrect: false },
 				{ answerText: '1912', isCorrect: true },
 			],
 		},
