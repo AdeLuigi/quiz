@@ -47,6 +47,24 @@ export default function App() {
 				{ answerText: 'Joan Clarke', isCorrect: true },
 			],
 		},
+		{
+			questionText: 'Alan Turing era _____',
+			answerOptions: [
+				{ answerText: 'bissexual', isCorrect: false },
+				{ answerText: 'panssexual', isCorrect: false },
+				{ answerText: 'Homossexual', isCorrect: true },
+				{ answerText: 'intersexual', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'Alan Turing era _____',
+			answerOptions: [
+				{ answerText: 'Muçulmano', isCorrect: false },
+				{ answerText: 'Cristão', isCorrect: false },
+				{ answerText: 'Ateu', isCorrect: true },
+				{ answerText: 'budista', isCorrect: false },
+			],
+		},
 	];
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -92,6 +110,14 @@ export default function App() {
 					<div style={{display:'flex', flexDirection:'column'}}> 
 						<h5>5 - Alan Turing era noivo de Joan Clarke</h5>
 						<p>Foi na Hut 8 que Turing conheceu Joan Clarke, com qem teve um noivado de curtíssima duração — ele revelou para ela que era homossexual. Mesmo com o fim do noivado, Joan continuou amiga de Turing até a morte dele, em 1954. Ele se matou com cianureto, antes de completar 42 anos</p>
+					</div>
+					<div style={{display:'flex', flexDirection:'column'}}> 
+						<h5>6 - Alan Turing era homessexual</h5>
+						<p>Somente em 2009, o primeiro ministro do Reino Unido, Gordon Brown, pediu desculpas publicamente em nome do governo britânico. “Alan e muitos outros milhares de homens gays que foram condenados por leis homofóbicas foram tratados terrivelmente”, disse Brown</p>
+					</div>
+					<div style={{display:'flex', flexDirection:'column'}}> 
+						<h5>7 - Alan Turing era ateu</h5>
+						<p>Alan Turing era ateu, homossexual e foi o pai da ciência da computação, isso nos mostra o quanto o preconceito só gera um atraso para a humanidade, caso este homem estivesse vivo talvez nós teríamos avançado bem mais como civilização.</p>
 					</div>
 				</div>
 			) : (
