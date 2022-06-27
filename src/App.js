@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import IMG5 from "./pergunta5.png"
-import IMG6 from "./pergunta6.png"
+import IMG6 from "./pergunta6.jpg"
 
 export default function App() {
 	const questions = [
@@ -60,12 +60,12 @@ export default function App() {
 			],
 		},
 		{
-			questionText: 'Alan Turing era _____',
+			questionText: 'Quem foi pitágoras:',
 			answerOptions: [
-				{ answerText: 'Muçulmano', isCorrect: false },
-				{ answerText: 'Cristão', isCorrect: false },
-				{ answerText: 'Ateu', isCorrect: true },
-				{ answerText: 'budista', isCorrect: false },
+				{ answerText: 'Matemático Egípcio que construiu as pirâmides.', isCorrect: false },
+				{ answerText: 'Matemático de nossa época que vive na Itália, atualmente. ', isCorrect: false },
+				{ answerText: 'Professor das melhores universidades do mundo que estudam os triângulos.', isCorrect: false },
+				{ answerText: 'Filósofo e matemático grego.', isCorrect: true },
 			],
 		},
 	];
@@ -138,8 +138,8 @@ Do nosso ponto de vista, o que Tales fez foi usar a semelhança entre os triâng
 						<p>Quando um triângulo apresentar um ângulo reto, ele será chamado de triângulo retângulo. O lado oposto ao ângulo reto recebe o nome de hipotenusa, e os outros dois lados são chamados de catetos. Além disso, é para esse triângulo que vale o teorema de Pitágoras.</p>
 					</div>
 					<div style={{display:'flex', flexDirection:'column'}}> 
-						<h5>7 - Alan Turing era ateu</h5>
-						<p>Alan Turing era ateu, homossexual e foi o pai da ciência da computação, isso nos mostra o quanto o preconceito só gera um atraso para a humanidade, caso este homem estivesse vivo talvez nós teríamos avançado bem mais como civilização.</p>
+						<h5>7 - Quem foi pitágoras:</h5>
+						<p>Pitágoras de Samos foi um dos grandes filósofos pré-socráticos e matemáticos da Grécia Antiga. Segundo ele “tudo é número”, frase que indica uma explicação para a realidade e tudo que existe no mundo. A ele foi atribuído o uso e criação dos termos “filósofo” e “matemática”. Pitágoras foi um exímio geômetra, deixando como principal contribuição para a Matemática a descoberta da relação de igualdade entre o quadrado da hipotenusa e a soma dos quadrados dos catetos no interior de um triângulo retângulo, o que ficou conhecido como teorema de Pitágoras.</p>
 					</div>
 				</div>
 			) : (
