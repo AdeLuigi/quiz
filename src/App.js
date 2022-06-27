@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import IMG5 from "./pergunta5.png"
+import IMG6 from "./pergunta6.png"
 
 export default function App() {
 	const questions = [
@@ -41,21 +42,21 @@ export default function App() {
 			],
 		},
 		{
-			questionText: 'Dado o triângulo a seguir e sabendo que o segmento DE é paralelo à base CB e que AC mede 10 cm, AD mede 4 cm e AE é igual a 5 cm, então podemos afirmar que o segmento BE mede:',
+			questionText: 'O teorema de pitágoras corresponde a:',
 			answerOptions: [
-				{ answerText: 'Beyoncé', isCorrect: false },
-				{ answerText: 'Anitta', isCorrect: false },
-				{ answerText: 'Adele', isCorrect: false },
-				{ answerText: 'Joan Clarke', isCorrect: true },
+				{ answerText: 'O quadrado da hipotenusa é igual à soma dos quadrados dos catetos.', isCorrect: true },
+				{ answerText: 'O quadrado da hipotenusa é igual aos quadrados dos catetos', isCorrect: false },
+				{ answerText: 'O quadrado do cateto oposto é igual a soma do quadrado do cateto adjacente e hipotenusa.', isCorrect: false },
+				{ answerText: 'O quadrado do cateto oposto é igual à soma do quadrado da hipotenusa', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Alan Turing era _____',
+			questionText: 'Como são chamados os lados de um triângulo retângulo?',
 			answerOptions: [
-				{ answerText: 'bissexual', isCorrect: false },
-				{ answerText: 'panssexual', isCorrect: false },
-				{ answerText: 'Homossexual', isCorrect: true },
-				{ answerText: 'intersexual', isCorrect: false },
+				{ answerText: 'altura e diagonal.', isCorrect: false },
+				{ answerText: 'altura e hipotenusa.', isCorrect: false },
+				{ answerText: 'catetos e diagonal.', isCorrect: false },
+				{ answerText: 'catetos e hipotenusa.', isCorrect: true },
 			],
 		},
 		{
@@ -77,6 +78,10 @@ export default function App() {
 		if (index == 4) {
 			return <img src={IMG5} width={400}  />
 		}
+
+		if (index == 6) {
+			return <img src={IMG6} width={400}  />
+		}
 	}
 
 	const handleAnswerOptionClick = (isCorrect) => {
@@ -93,6 +98,11 @@ export default function App() {
 	};
 
 	return (
+		<>
+													<div>
+							<h1>Quiz - A chegada da Geometria na Grécia antiga!</h1>
+						</div>
+		
 		<div className='app'>
 			{showScore ? (
 				<div className='score-section'>
@@ -120,12 +130,12 @@ Do nosso ponto de vista, o que Tales fez foi usar a semelhança entre os triâng
 						<p>42m</p>
 					</div>
 					<div style={{display:'flex', flexDirection:'column'}}> 
-						<h5>5 - Alan Turing era noivo de Joan Clarke</h5>
-						<p>Foi na Hut 8 que Turing conheceu Joan Clarke, com qem teve um noivado de curtíssima duração — ele revelou para ela que era homossexual. Mesmo com o fim do noivado, Joan continuou amiga de Turing até a morte dele, em 1954. Ele se matou com cianureto, antes de completar 42 anos</p>
+						<h5>5 - O teorema de pitágoras corresponde a: O quadrado da hipotenusa é igual à soma dos quadrados dos catetos</h5>
+						<p>O teorema de Pitágoras diz que o quadrado da hipotenusa é igual à soma dos quadrados dos catetos. Podemos utilizar esse teorema para facilitar o cálculo da diagonal de um quadrado e altura de um triângulo equilátero (triângulo com os lados iguais).O teorema de Pitágoras é uma expressão que pode ser aplicada em qualquer triângulo retângulo (triângulo que tem um ângulo de 90°)</p>
 					</div>
 					<div style={{display:'flex', flexDirection:'column'}}> 
-						<h5>6 - Alan Turing era homessexual</h5>
-						<p>Somente em 2009, o primeiro ministro do Reino Unido, Gordon Brown, pediu desculpas publicamente em nome do governo britânico. “Alan e muitos outros milhares de homens gays que foram condenados por leis homofóbicas foram tratados terrivelmente”, disse Brown</p>
+						<h5>6 - Como são chamados os lados de um triângulo retângulo?</h5>
+						<p>Quando um triângulo apresentar um ângulo reto, ele será chamado de triângulo retângulo. O lado oposto ao ângulo reto recebe o nome de hipotenusa, e os outros dois lados são chamados de catetos. Além disso, é para esse triângulo que vale o teorema de Pitágoras.</p>
 					</div>
 					<div style={{display:'flex', flexDirection:'column'}}> 
 						<h5>7 - Alan Turing era ateu</h5>
@@ -153,5 +163,6 @@ Do nosso ponto de vista, o que Tales fez foi usar a semelhança entre os triâng
 				</>
 			)}
 		</div>
+		</>
 	);
 }
